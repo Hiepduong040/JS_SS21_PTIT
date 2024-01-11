@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var maths = +prompt("Nhập vào điểm môn toán");
+      var literature = +prompt("Nhập vào điểm môn văn");
+      var english = +prompt("Nhập vào điểm môn tiếng anh");
+      var average = (maths + literature + english) / 3;
+
+      if (average >= 8 && average <= 10) {
+        document.write("xếp loại GIỎI");
+      } else if (average >= 6.5 && average <= 7.9) {
+        document.write("xếp loại KHÁ");
+      } else if (average >= 5 && average <= 6.4) {
+        document.write("xếp loại TRUNG BÌNH");
+      } else if (average >= 0 && average < 5) {
+        document.write("xếp loại YẾU");
+      } else {
+        document.write("nhập điểm không hợp lệ!!! Vui lòng nhập lại");
+      }
+    </script>
+  </body>
+</html>

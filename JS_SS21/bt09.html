@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var a = +prompt("Nhập vào số a");
+      var b = +prompt("Nhập vào số b");
+      var c = +prompt("Nhập vào số c");
+      if (a > b) {
+        if (b > c) {
+          document.write("Dãy số tăng dần là: ", c, b, a);
+        } else if (a > c) {
+          document.write("Dãy số tăng dần là: ", b, c, a);
+        } else {
+          document.write("Dãy số tăng dần ", b, a, c);
+        }
+      } else {
+        if (a > c) {
+          document.write("Dãy số tăng dần là:", c, a, b);
+        } else if (b > c) {
+          document.write("Dãy số tăng dần là:", a, c, b);
+        } else {
+          document.write("Dãy số tăng dần là:", a, b, c);
+        }
+      }
+    </script>
+  </body>
+</html>
